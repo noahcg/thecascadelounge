@@ -1,0 +1,9 @@
+.home-background-animation { position:absolute; z-index:-1; inset:0 0 auto; height:var(--home-scene-height); overflow:clip; pointer-events:none; background-repeat:no-repeat }
+.home-background-animation > canvas { position:absolute; top:0; display:block; max-width:none; height:100%; pointer-events:none }
+.home-background-animation > .home-background-shade { position:absolute; inset:0; background-repeat:no-repeat; pointer-events:none }
+@media (prefers-reduced-motion:reduce),(forced-colors:active) {
+  .home-background-animation { display:none }
+}
+@media print {
+  .home-background-animation { display:none }
+}
